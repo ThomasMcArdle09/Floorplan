@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Floorplan">
+    <meta name="keywords" content="floorplan, home, design, interior">
+    <meta name="description" content="Design and plan the layout of your rooms with Floorplan. Bring your imagination to life with the drag and drop editor.">
+    <title>Floorplan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="display.js"></script>
+</head>
+<body onload="displayCatalog()">
+    
+    <div class="verticleWrapper">
+        <div class="topBar">
+            <div class="tabs">
+                <div class="tabOption"><a>My Rooms</a></div>
+                <div class="tabOption"><a>Premium</a></div>
+                <div class="tabOption"><a>For Brands</a></div>
+            </div>
+            <div class="profileCard">
+                <div class="vert-centre">
+                    <img class="pfp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7PnX8UQbCIl69PLxkn5pYoNxd2qMv5VSu5OgfBowWMv2LuKQtXVwhOnZaKlloRrzLYKA&usqp=CAU">
+                </div>
+                <div class="nameList">
+                    <div class="nameText">Thomas McArdle</div>
+                    <div class="subText">thomasmcardle@email.com</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="catalogPanel">
+                <input name="furnitureCatalog" placeholder="Search for furniture and decorations" id="search">
+                <div class="itemsList" id="catalog">
+                    
+                </div>
+            </div>
+            <model-viewer
+                src="Astronaut.glb"
+                alt="Astronaut"
+                camera-controls
+                auto-rotate
+                style="width: 600px; min-height: 400px; border: 1px solid #ccc;">
+            </model-viewer>
+
+        </div>
+    </div>
+
+</body>
+</html>
