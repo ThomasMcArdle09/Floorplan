@@ -8,11 +8,16 @@
     <meta name="description" content="Design and plan the layout of your rooms with Floorplan. Bring your imagination to life with the drag and drop editor.">
     <title>Floorplan</title>
     <link rel="stylesheet" href="style.css">
-    <script src="display.js"></script>
+    <script type="module" src="display.js"></script>
 </head>
 <body onload="displayCatalog()">
 
     <script type="module">
+        import './display.js';
+        window.addEventListener('DOMContentLoaded', () => {
+            displayCatalog();
+        });
+
         import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.164.0/build/three.module.js';
         import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.164.0/examples/jsm/controls/OrbitControls.js';
         import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.164.0/examples/jsm/loaders/GLTFLoader.js';
